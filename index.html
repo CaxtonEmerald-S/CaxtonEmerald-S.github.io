@@ -1,287 +1,178 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>Caxton Emerald S – Online Résumé</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Caxton Emerald S, PhD — independent researcher in mechanistic interpretability, explainable AI, and neural network optimisation. Open to postdoctoral and research scientist opportunities.">
+  <meta name="theme-color" content="#12233a">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Caxton Emerald S, PhD | Mechanistic Interpretability Researcher">
+  <meta property="og:description" content="Research in neural network mechanisms, interpretable models, optimisation and scientific applications of machine learning.">
+  <meta property="og:url" content="https://caxtonemerald-s.github.io/">
+  <link rel="canonical" href="https://caxtonemerald-s.github.io/">
+  <title>Caxton Emerald S, PhD | Mechanistic Interpretability Researcher</title>
   <style>
-    body {
-      font-family: Arial, sans-serif;
-      line-height: 1.6;
-      max-width: 800px;
-      margin: 2rem auto;
-      padding: 0 1rem;
-      colour: #333;
-    }
-    h1, h2, h3 {
-      margin-bottom: 0.5rem;
-      colour: #222;
-    }
-    .contact-info, .links {
-      margin-bottom: 1.5rem;
-    }
-    .section {
-      margin-bottom: 2rem;
-    }
-    ul, ol {
-      margin: 0.5rem 0 0.5rem 1.25rem;
-    }
-    a {
-      colour: #1a0dab;
-      text-decoration: none;
-    }
-    a:hover {
-      text-decoration: underline;
-    }
-    hr {
-      margin: 2rem 0;
-      border: none;
-      border-top: 1px solid #ccc;
-    }
-    .address {
-      font-style: italic;
-      margin-bottom: 1rem;
-    }
+    :root {color-scheme:light; --ink:#1c2b3d; --sub:#4b6074; --muted:#6c7d8d; --line:#dce5ec; --navy:#12233a; --blue:#075f83; --bg:#f6f8fb; --panel:#ffffff; --accent:#d9eef5; }
+    * {box-sizing:border-box}
+    html {scroll-behavior:smooth}
+    body {margin:0; background:var(--bg); color:var(--ink); font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif; line-height:1.67; font-size:16px}
+    a {color:var(--blue); text-underline-offset:3px}
+    a:hover,a:focus-visible {color:#003d5f}
+    a:focus-visible {outline:3px solid #f9bc60;outline-offset:3px;border-radius:2px}
+    .wrap {width:min(1060px,calc(100% - 40px));margin:auto}
+    .skip {position:absolute;left:-10000px;top:auto}
+    .skip:focus {left:1rem;top:1rem;background:white;padding:.5rem;z-index:9}
+    .top {background:var(--navy);color:#f6fbff}
+    nav {display:flex;flex-wrap:wrap;gap:8px 22px;align-items:center;justify-content:space-between;padding:16px 0;font-size:.93rem}
+    nav .brand {color:white;font-weight:700;text-decoration:none;white-space:nowrap}
+    .navlinks {display:flex;flex-wrap:wrap;gap:8px 17px}
+    nav .navlinks a {color:#dcecf5;text-decoration:none}
+    nav .navlinks a:hover {text-decoration:underline}
+    .hero {padding:63px 0 70px}
+    .eyebrow {margin:0 0 8px;color:#b8dbeb;font-size:.88rem;text-transform:uppercase;letter-spacing:.12em;font-weight:700}
+    h1 {font-size:clamp(2.1rem,5.3vw,3.4rem);line-height:1.15;letter-spacing:-.03em;margin:0 0 15px}
+    .lead {font-size:1.14rem;color:#e0edf5;max-width:790px;margin:0 0 23px}
+    .availability {display:inline-flex;align-items:center;gap:10px;border:1px solid #5e97a5;background:#23425b;color:white;border-radius:999px;padding:7px 14px;font-size:.89rem;font-weight:650;margin-bottom:23px}
+    .dot {width:8px;height:8px;background:#82e0bb;border-radius:50%;flex:none}
+    .hero-links {display:flex;gap:11px;flex-wrap:wrap}
+    .button {display:inline-block;text-decoration:none;border:1px solid #a8c4d5;color:var(--navy);padding:9px 14px;border-radius:7px;background:#fff;font-weight:650;font-size:.94rem}
+    .button.outline {background:transparent;color:#f2fbff;border-color:#7995a8}
+    .button:hover {background:#d8eff8;color:#0d3046}
+    main {padding:38px 0 55px}
+    section {scroll-margin-top:32px;margin-bottom:41px}
+    h2 {font-size:1.5rem;line-height:1.3;letter-spacing:-.015em;margin:0 0 14px}
+    h3 {font-size:1.02rem;line-height:1.4;margin:0 0 7px}
+    p {margin:0 0 13px}
+    .intro {font-size:1.02rem;max-width:930px}
+    .two {display:grid;grid-template-columns:1fr 1fr;gap:17px}
+    .card {background:var(--panel);padding:22px;border:1px solid var(--line);border-radius:10px;box-shadow:0 2px 10px rgba(10,36,61,.025)}
+    .card p:last-child {margin-bottom:0}
+    .tag {display:inline-block;font-size:.75rem;font-weight:720;letter-spacing:.025em;color:#245d73;background:var(--accent);padding:4px 9px;border-radius:99px;margin-bottom:9px}
+    .itemlist {margin:0;padding:0;list-style:none}
+    .itemlist li {padding:14px 0;border-bottom:1px solid var(--line)}
+    .itemlist li:last-child {border-bottom:0}
+    .meta {color:var(--sub);font-size:.91rem}
+    .links {font-size:.92rem;margin-top:7px}
+    .links a {margin-right:15px;white-space:nowrap}
+    .pillinks {display:flex;flex-wrap:wrap;gap:9px}
+    .pillinks a {display:inline-block;padding:6px 11px;border:1px solid #cbdce8;border-radius:99px;background:white;text-decoration:none;font-size:.88rem}
+    .small {font-size:.88rem;color:var(--sub)}
+    .note {border-left:3px solid #82b7c7;padding:8px 13px;color:var(--sub);background:#ebf3f7;border-radius:0 7px 7px 0}
+    footer {border-top:1px solid var(--line);background:white;padding:24px 0;color:var(--sub);font-size:.9rem}
+    @media(max-width:740px){.two{grid-template-columns:1fr}.hero{padding:46px 0}.wrap{width:min(100% - 28px,1060px)}.card{padding:17px}.navlinks{gap:8px 12px}}
+    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
   </style>
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"Person","name":"Caxton Emerald S","honorificSuffix":"PhD","url":"https://caxtonemerald-s.github.io/","jobTitle":"Independent Researcher","alumniOf":{"@type":"CollegeOrUniversity","name":"Pondicherry University"},"sameAs":["https://orcid.org/0000-0002-7763-3987","https://github.com/CaxtonEmerald-S","https://huggingface.co/CaxtonEmeraldS","https://scholar.google.com/citations?user=OgCHQv4AAAAJ","https://www.linkedin.com/in/caxton-emerald-s/"]}
+  </script>
 </head>
 <body>
-
-  <!-- Header -->
-  <h1>Caxton Emerald S</h1>
-  <div class="address">
-    Tamil Nadu,<br>
-    India
+<a class="skip" href="#main">Skip to main content</a>
+<header class="top">
+  <div class="wrap">
+    <nav aria-label="Primary navigation">
+      <a class="brand" href="#home">Caxton Emerald S</a>
+      <div class="navlinks">
+        <a href="#about">About</a><a href="#research">Research</a><a href="#publications">Publications</a><a href="#software">Software &amp; Demos</a><a href="#experience">Experience</a><a href="#contact">Contact</a>
+      </div>
+    </nav>
+    <div id="home" class="hero">
+      <p class="eyebrow">Independent Researcher · Computer Science</p>
+      <h1>Caxton Emerald S, PhD</h1>
+      <p class="lead">Mechanistic interpretability, explainable artificial intelligence, and understanding the computations performed by neural networks.</p>
+      <div class="availability"><span class="dot" aria-hidden="true"></span>Open to Postdoctoral Researcher and Research Scientist opportunities</div>
+      <div class="hero-links">
+        <a class="button" href="#publications">View publications</a>
+        <a class="button outline" href="#software">Explore research software</a>
+        <a class="button outline" href="https://orcid.org/0000-0002-7763-3987" target="_blank" rel="noopener noreferrer">ORCID profile</a>
+      </div>
+    </div>
   </div>
-  <div class="contact-info">
-    <p>
-      Contact: <a href="https://www.linkedin.com/in/caxton-emerald-s/" target="_blank">LinkedIn</a>
-    </p>
-  </div>
-  <div class="Public Profiles and Links">
-    <p> 
-      <a href="https://orcid.org/0000-0002-7763-3987" target="_blank">ORCiD</a>  • 
-      <a href="https://scholar.google.com/citations?hl=en&user=OgCHQv4AAAAJ" target="_blank">Google Scholar</a> • 
-      <a href="https://github.com/CaxtonEmerald-S" target="_blank">GitHub</a>  • 
-      <a href="https://huggingface.co/CaxtonEmeraldS" target="_blank">HuggingFace</a> 
-    </p>
-	<p>
-	  <a href="https://www.scopus.com/authid/detail.uri?authorId=57576533600" target="_blank">ScopusID: 57576533600</a>  • 
-	  <a href="https://www.webofscience.com/wos/author/record/ABH-8080-2022" target="_blank">ResearcherID: ABH-8080-2022</a>  • 
-	  <a href="https://vidwan.inflibnet.ac.in/profile/647920" target="_blank">Vidwan: 647920</a>
-	</p>
-  </div>
-  <hr>
-
-  <!-- Section: About Me -->
-  <div class="section">
-    <h2>About Me</h2>
-    <p>I am a doctoral researcher in Computer Science at Pondicherry University, India, investigating the mechanistic interpretability of low-dimensional universal-approximator artificial neural networks (ANNs). My work unifies theoretical analysis with empirical results and optimisation via the JeevanRuth Neural Network Optimisation Algorithm, which reduces redundant neurons while preserving accuracy for a specific class of low dimensional ANNs. I develop and maintain the open-source python packages NNVisualiser and NeuralNetworkCoordinates, enabling fine-grained visual analysis of neuron-level transformations; corresponding model repositories are hosted on Hugging Face to support reproducibility. My research has appeared in Scopus-indexed journals and conferences. One of my research presentations at ICACS 2025 has gotten the Best Research Paper Award. Broadly, I aim to advance responsible, explainable AI by revealing how compact ANN architectures learn and generalise. Apart from my interests in Mechanistic Interpretability, I also aim to contribute towards AGI. My learning interests range from the Quantum realms of physics to Black holes of the Verse, from Cognitive Neuroscience to Evolutionary Developmental Biology.
-    </p>
-  </div>
-
-  <!-- Section: Academic Qualifications -->
-  <div class="section">
-    <h2>Academic Qualifications</h2>
-    <p><strong>PhD in Computer Science</strong> (August 2019 – Present)<br>
-    Pondicherry University (A Central University), Puducherry, India<br>
- 
-
-    <p><strong>Five-Year Integrated M.Sc. in Computer Science</strong> (Graduated May 2015)<br>
-    Pondicherry University (A Central University), Puducherry, India<br>
-    Final CGPA: 9.57</p>
-  </div>
-
-  <!-- Section: Areas of Research Interest -->
-  <div class="section">
-    <h2>Areas of Research Interest</h2>
-    <ul>
-      <li>Artificial Intelligence</li>
-      <li>Mechanistic Interpretability</li>
-      <li>Cognitive Neuroscience</li>
-      <li>Quantum AI</li>
-    </ul>
-  </div>
-
-  <!-- Section: Future Research Directions -->
-  <div class="section">
-    <h2>Future Research Directions</h2>
-    <ul>
-      <li>Extend mechanistic interpretability studies to high dimesnional models and LLMs</li>
-      <li>Contribute to AGI by understanding Cognitive Neuroscience and Quantum AI</li>
-    </ul>
-  </div>
-
-  <!-- Section: Publications Related to Thesis -->
-  <div class="section">
-    <h2>Publications</h2>
-    <ol>
-      <li>
-        <strong>S. Caxton Emerald</strong> and T. Vengattaraman, “Neural network optimization via inactive neuron removal and neuron merging in single input single output architectures,”<br>
-        <em>International Journal of Information Technology</em>, May 2025.  
-        DOI: <a href="https://doi.org/10.1007/s41870-025-02545-6" target="_blank">10.1007/s41870-025-02545-6</a>
-      </li>
-      <li>
-        <strong>Caxton Emerald S</strong> and V. T, “<em>NNVisualiser: An Emerging Framework for Visualising Artificial Neural Networks</em>,” in  
-        2025 International Conference on Data Science, Agents &amp; Artificial Intelligence (ICDSAAI), Chennai, India, IEEE, Mar. 2025, pp. 1–6.  
-        DOI: <a href="https://doi.org/10.1109/ICDSAAI65575.2025.11011573" target="_blank">10.1109/ICDSAAI65575.2025.11011573</a>
-      </li>
- 
-<h3>Presented at International Conferences and Awaiting Publications</h3>
-	<li>
-        <strong>Caxton Emerald S</strong>, T. Vengattaraman, “Approximating the sine function with the universal approximator: An experimental study with visualisations,”  
-        International Conference on Artificial Intelligence, Communication Technologies &amp; Smart Cities (ICACS), Mar. 01 2025, Springer.
-	</li>
-      <li>
-        <strong>Caxton Emerald S</strong>, T. Vengattaraman, “Understanding the role of neurons and layers in one-dimensional three-class classifiers,”  
-        ICACS, Mar. 01 2025, Springer — Awarded Best Research Paper.
-      </li>
-      <li>
-        <strong>Caxton Emerald S</strong>, T. Vengattaraman, “Understanding the role of Neurons and Layers in Approximating the Absolute Value Function using Artificial Neural Networks,”  
-        International Conference on AI Systems and Sustainable Technologies (IISU-ASSET), Mar. 28–29 2025, Springer.
-      </li>
-      <li>
-        <strong>Caxton Emerald S</strong>, T. Vengattaraman, “Neural Network Coordinates: A Python Package for Studying Artificial Neural Networks,”  
-        IISU-ASSET, Mar. 28–29 2025, Springer.
-      </li>
-    </ol>
-  </div>
-
-  <!-- Section: Other Publications -->
-  <div class="section">
-    <h2>Other Publications</h2>
-    <ol>
-      <li>
-        <strong>S. Caxton Emerald</strong> and T. Vengattaraman, “Chaotic Ant Swarm based Feature Subset Selection with Concept Drift Detection and Classification Model for Data Streaming Applications,”  
-        2022 Second International Conference on Artificial Intelligence and Smart Energy (ICAIS), 2022, pp. 991–996.  
-        DOI: <a href="https://doi.org/10.1109/ICAIS53314.2022.9742928" target="_blank">10.1109/ICAIS53314.2022.9742928</a>
-      </li>
-      <li>
-        <strong>S. C. Emerald</strong> and T. Vengattaraman, “Concept Drift Detection with Optimal Machine Learning Model for Data Classification,”  
-        2022 6th International Conference on Trends in Electronics and Informatics (ICOEI), 2022, pp. 1160–1165.  
-        DOI: <a href="https://doi.org/10.1109/ICOEI53556.2022.9776949" target="_blank">10.1109/ICOEI53556.2022.9776949</a>
-      </li>
-      <li>
-        <strong>S. C. Emerald</strong> and T. Vengattaraman, “Explainable Artificial Intelligence with Single Layer Feedforward Neural Network and Improved Crowned Porcupine Optimization Algorithm for Classification Problems,”  
-        <em>Engineering, Technology &amp; Applied Science Research</em>, vol. 15, no. 2, pp. 21593–21598, Apr. 2025.  
-        DOI: <a href="https://doi.org/10.48084/etasr.10070" target="_blank">10.48084/etasr.10070</a>
-      </li>
-	  <li>
-		P. Govindharaj, N. Alungal, <strong>C. Emerald. S</strong>, and Kannan. S, "Au@CeO2 nanozyme based smart colourimetric sensor for cholesterol: A neural network powered point of care solution model", 
-		<em>Biochemical Engineering Journal</em>, vol. 225, p. 109908, 2026. 
-		DOI:<a href="https://doi.org/10.1016/j.bej.2025.109908" target="_blank">10.1016/j.bej.2025.109908</a>	
-	  </li>
-    </ol>
-  </div>
-
-  <!-- Section: Python Packages -->
-  <div class="section">
-    <h2>Python Packages</h2>
-    <ul>
-      <li>
-        <strong>NeuralNetworkCoordinates</strong>: Precise coordinates for visualising intricate neural network transformations.  
-        – Accessed Jun. 04 2025.  
-        <a href="https://pypi.org/project/NeuralNetworkCoordinates/" target="_blank">PyPI</a> •  
-        <a href="https://github.com/CaxtonEmerald-S/NeuralNetworkCoordinates" target="_blank">GitHub</a>
-      </li>
-      <li>
-        <strong>NNVisualiser</strong>: A Python package utilising Matplotlib to visualise coordinates from NeuralNetworkCoordinates for single-input, single-output neural networks. 
-        <a href="https://pypi.org/project/NNVisualiser/" target="_blank">PyPI</a> •  
-        <a href="https://github.com/CaxtonEmerald-S/NNVisualiser" target="_blank">GitHub</a>
-      </li>
-    </ul>
-  </div>
-
-  <!-- Section: Model Repository -->
-  <div class="section">
-    <h2>Model Repository on HuggingFace Space</h2>
-    <p>
-      <a href="https://huggingface.co/spaces/CaxtonEmeraldS/SimpleNeuralNetworkModelsCompressed" target="_blank"><strong>Simple ANNs Optimised With JeevanRuth NN Optimisation Algorithm</strong></a><br>
-    </p>
-  </div>
-
-  <!-- Section: Research Credits -->
-  <div class="section">
-    <h2>Research Credits</h2>
-    <ul>
-      <li>Google Cloud Research Credits program with EDU Credit—wilsonjessica—281056349 award.</li>
-    </ul>
-  </div>
-
-  <!-- Section: Professional Qualification -->
-  <div class="section">
-    <h2>Professional Qualification</h2>
-    <ul>
-      <li>India’s National Eligibility Test (UGC-NET June 2015) for Assistant Professorship.</li>
-      <li>Regional Eligibility Test (TN SET July 2018) for Assistant Professorship.</li>
-      <li>Software Engineering Training (SET) Programme by HTC Global Services on Java EE (Struts, Spring, Web Services).</li>
-    </ul>
-  </div>
-
-  <!-- Section: Industrial Experience -->
-  <div class="section">
-    <h2>Industrial Experience</h2>
-    <p>
-      <strong>Software Development Engineer</strong> — HTC Global Services, Chennai (Dec. 2016 - Mar. 2018)  
-      <ul>
-        <li>Developed real-time Java-based web applications.</li>
-        <li>Collaborated on back-end services using Java EE technologies.</li>
+</header>
+<main id="main" class="wrap">
+  <section id="about" aria-labelledby="about-title">
+    <h2 id="about-title">About</h2>
+    <p class="intro">I am an independent researcher with a PhD in Computer Science from Pondicherry University (awarded February 2026). My research investigates how artificial neural networks represent and approximate mathematical functions, with particular attention to minimal architectures, neuron-level computations, and model optimisation. I have developed research software for inspecting and visualising neural networks, and collaborated on applications of neural networks to colourimetric sensing.</p>
+    <p class="intro">My long-term objective is to connect theoretical understanding of learning systems with practical, efficient implementations. I am interested in learning across the full development process—from algorithms and experimentally validated models to specialised hardware and custom chip implementation—and in interdisciplinary questions involving biology, cognitive neuroscience, physics and astrophysics.</p>
+  </section>
+  <section id="research" aria-labelledby="research-title">
+    <h2 id="research-title">Research interests and directions</h2>
+    <div class="two">
+      <article class="card">
+        <span class="tag">Established research</span>
+        <h3>Understanding neural network mechanisms</h3>
+        <p>Mechanistic interpretability; minimal neural architectures; function approximation; analysis of neurons, layers and learned transformations; explainable AI.</p>
+        <p>Model compression and optimisation, including inactive-neuron removal and neuron merging in simple feedforward architectures.</p>
+      </article>
+      <article class="card">
+        <span class="tag">Research directions to explore</span>
+        <h3>From explanations to efficient systems</h3>
+        <p>Extending interpretability to deep networks and language models; causal analysis of representations and circuits; connections to computational and cognitive neuroscience.</p>
+        <p>Interpretable model-to-hardware co-design, neuromorphic computing, computational biology, quantum approaches to AI, and AI-enabled scientific discovery, including questions in astrophysics.</p>
+      </article>
+    </div>
+  </section>
+  <section id="publications" aria-labelledby="pub-title">
+    <h2 id="pub-title">Selected peer-reviewed publications</h2>
+    <div class="card">
+      <ul class="itemlist">
+        <li><strong>Neural network optimization via inactive neuron removal and neuron merging in single input single output architectures.</strong><br><span class="meta">Caxton Emerald S &amp; T. Vengattaraman · International Journal of Information Technology (2025)</span><div class="links"><a href="https://doi.org/10.1007/s41870-025-02545-6" target="_blank" rel="noopener noreferrer">DOI: 10.1007/s41870-025-02545-6</a></div></li>
+        <li><strong>NNVisualiser: An Emerging Framework for Visualising Artificial Neural Networks.</strong><br><span class="meta">Caxton Emerald S &amp; T. Vengattaraman · IEEE ICDSAAI (2025)</span><div class="links"><a href="https://doi.org/10.1109/ICDSAAI65575.2025.11011573" target="_blank" rel="noopener noreferrer">DOI: 10.1109/ICDSAAI65575.2025.11011573</a></div></li>
+        <li><strong>Neural Network Coordinates: A Python Package for Studying Artificial Neural Networks.</strong><br><span class="meta">Caxton Emerald S &amp; T. Vengattaraman · Proceedings of the International Conference on AI Systems and Sustainable Technologies (2026)</span><div class="links"><a href="https://doi.org/10.1007/978-981-95-0626-2_15" target="_blank" rel="noopener noreferrer">DOI: 10.1007/978-981-95-0626-2_15</a></div></li>
+        <li><strong>Interpretable Neural Network Design for Approximating the Generalized Absolute Value Function.</strong><br><span class="meta">S. Caxton Emerald &amp; T. Vengattaraman · Springer ASSET 2025 proceedings (2026)</span><div class="links"><a href="https://doi.org/10.1007/978-981-95-0626-2_16" target="_blank" rel="noopener noreferrer">DOI: 10.1007/978-981-95-0626-2_16</a></div></li>
+        <li><strong>Approximating the Sine Function with the Universal Approximator: An Experimental Study with Visualisations.</strong><br><span class="meta">S. Caxton Emerald &amp; T. Vengattaraman · Springer ICACS 2025 proceedings</span><div class="links"><a href="https://doi.org/10.1007/978-981-96-9196-8_20" target="_blank" rel="noopener noreferrer">DOI: 10.1007/978-981-96-9196-8_20</a></div></li>
+        <li><strong>Understanding the Role of Neurons and Layers in One-Dimensional Three-Class Classifiers.</strong><br><span class="meta">S. Caxton Emerald &amp; T. Vengattaraman · Springer ICACS 2025 proceedings</span><div class="links"><a href="https://doi.org/10.1007/978-981-96-9196-8_29" target="_blank" rel="noopener noreferrer">DOI: 10.1007/978-981-96-9196-8_29</a></div></li>
+        <li><strong>Explainable Artificial Intelligence with Single Layer Feedforward Neural Network and Improved Crowned Porcupine Optimization Algorithm for Classification Problems.</strong><br><span class="meta">S. Caxton Emerald &amp; T. Vengattaraman · Engineering, Technology &amp; Applied Science Research 15(2), 21593–21598 (2025)</span><div class="links"><a href="https://doi.org/10.48084/etasr.10070" target="_blank" rel="noopener noreferrer">DOI: 10.48084/etasr.10070</a></div></li>
+        <li><strong>Bimetallic Silver-Copper Micro Flower Nanozyme-Based Colorimetric Sensor Assisted by Artificial Neural Network for Point-of-Care Uric Acid Detection.</strong><br><span class="meta">N. Alungal, P. Govindharaj, Caxton Emerald S &amp; S. Kannan · Langmuir 42(37), 27381–27394 (2026)</span><div class="links"><a href="https://doi.org/10.1021/acs.langmuir.6c03725" target="_blank" rel="noopener noreferrer">Journal article</a><a href="https://huggingface.co/spaces/CES-SoftwareSolutions/UricAcid-Colorimetric-ANN-Demo" target="_blank" rel="noopener noreferrer">Companion application</a></div></li>
+        <li><strong>Au@CeO₂ nanozyme based smart colourimetric sensor for cholesterol: A neural network powered point of care solution model.</strong><br><span class="meta">P. Govindharaj, N. Alungal, Caxton Emerald S &amp; S. Kannan · Biochemical Engineering Journal 225, 109908 (2026)</span><div class="links"><a href="https://doi.org/10.1016/j.bej.2025.109908" target="_blank" rel="noopener noreferrer">Journal article</a><a href="https://huggingface.co/CaxtonEmeraldS/CholesterolConcentrationPredictor" target="_blank" rel="noopener noreferrer">Model repository</a></div></li>
       </ul>
-    </p>
-  </div>
-
-  <!-- Section: Teaching Experience -->
-  <div class="section">
-    <h2>Teaching Experience</h2>
-    <p>
-      <strong>Guest Faculty</strong> — Department of Computer Science, Pondicherry University (Nov. 2015 – May 2016)  
-      <ul>
-        <li>Taught Postgraduate courses in Automata Theory and Design and Analysis of Algorithms.</li>
-        <li>Supervised student projects and practical sessions.</li>
-      </ul>
-    </p>
-    <p>
-      <strong>Assistant Professor of Computer Science</strong> — Theivanai Ammal College for Women, Villupuram (Apr. 2018 - Apr. 2019)  
-      <ul>
-        <li>Taught courses in Cloud Computing, Android Application Development, and Programming.</li>
-        <li>Mentored undergraduate and postgraduate students on projects and outreach activities.</li>
-      </ul>
-    </p>
-  </div>
-
-  <!-- Section: Projects -->
-  <div class="section">
-    <h2>Projects</h2>
-    <ul>
-      <li>
-        <strong>PostGrad Major Project:</strong>  
-        “A Novel Hybrid Computation Based Visual Secret Sharing Scheme with Meaningful Shares” – original research, implemented in Java.
-      </li>
-      <li>
-        <strong>Grad Level Mini Project:</strong>  
-        “Latin Squares – A Simple Java Powered Gaming Application.”
-      </li>
-    </ul>
-  </div>
-
-  <!-- Section: Certifications -->
-  <div class="section">
-    <h2>Certifications</h2>
-    <ul>
-      <li>Completed <em>How Things Work: An Introduction to Physics</em> (University of Virginia, Coursera).</li>
-      <li>Completed <em>Industrial IoT on Google Cloud Platform</em> (Google Cloud, Coursera).</li>
-      <li>Completed <em>Neural Network from Scratch in TensorFlow</em> (Coursera Project Network).</li>
-    </ul>
-  </div>
-
-  <!-- Section: Declaration -->
-  <div class="section">
-    <h2>Declaration</h2>
-    <p>
-      I hereby declare that the above written particulars are true and correct to the best of my knowledge and belief.
-    </p>
-    <p>Date: June 2025<br>
-    Caxton Emerald S</p>
-  </div>
-
+      <p class="small">Additional publications and research outputs are available through <a href="https://scholar.google.com/citations?user=OgCHQv4AAAAJ" target="_blank" rel="noopener noreferrer">Google Scholar</a> and <a href="https://orcid.org/0000-0002-7763-3987" target="_blank" rel="noopener noreferrer">ORCID</a>.</p>
+    </div>
+  </section>
+  <section id="software" aria-labelledby="software-title">
+    <h2 id="software-title">Research software, models and demonstrations</h2>
+    <div class="two">
+      <article class="card"><span class="tag">Python research package</span><h3>NeuralNetworkCoordinates</h3><p>Provides coordinates for intermediate neural-network transformations to support neuron- and layer-level analysis and visualisation.</p><div class="links"><a href="https://pypi.org/project/NeuralNetworkCoordinates/" target="_blank" rel="noopener noreferrer">PyPI</a><a href="https://github.com/CaxtonEmerald-S/NeuralNetworkCoordinates" target="_blank" rel="noopener noreferrer">Source code</a><a href="https://doi.org/10.1007/978-981-95-0626-2_15" target="_blank" rel="noopener noreferrer">Publication</a></div></article>
+      <article class="card"><span class="tag">Python research package</span><h3>NNVisualiser</h3><p>Visualises neural network computations and intermediate transformations, including flow plots, using Matplotlib and coordinates from NeuralNetworkCoordinates.</p><div class="links"><a href="https://pypi.org/project/NNVisualiser/" target="_blank" rel="noopener noreferrer">PyPI</a><a href="https://github.com/CaxtonEmerald-S/NNVisualiser" target="_blank" rel="noopener noreferrer">Source code</a><a href="https://doi.org/10.1109/ICDSAAI65575.2025.11011573" target="_blank" rel="noopener noreferrer">Publication</a></div></article>
+      <article class="card"><span class="tag">Interactive model explorer</span><h3>Compact ANN model collection</h3><p>Explore trained neural networks approximating mathematical functions, including models associated with the JeevanRuth optimisation methodology.</p><div class="links"><a href="https://huggingface.co/spaces/CaxtonEmeraldS/SimpleNeuralNetworkModelsCompressed" target="_blank" rel="noopener noreferrer">Open Space</a><a href="https://doi.org/10.1007/s41870-025-02545-6" target="_blank" rel="noopener noreferrer">Related paper</a></div></article>
+      <article class="card"><span class="tag">Scientific application</span><h3>Cholesterol concentration prediction</h3><p>Research models associated with ANN-assisted colourimetric cholesterol estimation using an Au@CeO₂ nanozyme-based sensing approach.</p><div class="links"><a href="https://huggingface.co/CaxtonEmeraldS/CholesterolConcentrationPredictor" target="_blank" rel="noopener noreferrer">Model repository</a><a href="https://doi.org/10.1016/j.bej.2025.109908" target="_blank" rel="noopener noreferrer">Associated paper</a></div></article>
+      <article class="card"><span class="tag">Interactive scientific application</span><h3>Uric acid colourimetric ANN demo</h3><p>Demonstrates ANN-based estimation of uric acid concentration from smartphone RGB measurements with blank correction and model comparison.</p><div class="links"><a href="https://huggingface.co/spaces/CES-SoftwareSolutions/UricAcid-Colorimetric-ANN-Demo" target="_blank" rel="noopener noreferrer">Open Space</a><a href="https://doi.org/10.1021/acs.langmuir.6c03725" target="_blank" rel="noopener noreferrer">Associated paper</a></div></article>
+    </div>
+    <p class="note small" style="margin-top:15px">The sensing applications are research demonstrations. Their outputs should not be used as a substitute for validated clinical measurements or medical diagnosis.</p>
+  </section>
+  <section id="experience" aria-labelledby="exp-title">
+    <h2 id="exp-title">Education and experience</h2>
+    <div class="two">
+      <div class="card">
+        <h3>Education</h3>
+        <p><strong>PhD in Computer Science</strong><br>Pondicherry University · Awarded 6 February 2026</p>
+        <p class="small">Thesis: <em>Minimal Architecture Conjectures and Optimisation for Mechanistic Interpretability of Low-Dimensional Universal Approximator ANNs.</em></p>
+        <p><strong>Integrated M.Sc. in Computer Science</strong><br>Pondicherry University · 2015<br><span class="small">CGPA: 9.57/10</span></p>
+      </div>
+      <div class="card">
+        <h3>Academic and industry experience</h3>
+        <p><strong>Assistant Professor</strong>, Department of Statistics and Data Science, CHRIST (Deemed to be University), Bengaluru · Oct 2025 – Sep 2026</p>
+        <p><strong>Assistant Professor</strong>, Theivannai Ammal College for Women · Apr 2018 – Apr 2019</p>
+        <p><strong>Software Development Engineer</strong>, HTC Global Services · Dec 2016 – Mar 2018</p>
+        <p><strong>Guest Faculty</strong>, Pondicherry University · Nov 2015 – May 2016</p>
+      </div>
+    </div>
+  </section>
+  <section id="contact" aria-labelledby="contact-title">
+    <h2 id="contact-title">Contact and research profiles</h2>
+    <p>I welcome enquiries concerning postdoctoral positions, research scientist opportunities, scientific collaboration, and research software.</p>
+    <p>For professional enquiries, please contact me through <a href="https://www.linkedin.com/in/caxton-emerald-s/" target="_blank" rel="noopener noreferrer">LinkedIn</a>.</p>
+    <div class="pillinks">
+      <a href="https://orcid.org/0000-0002-7763-3987" target="_blank" rel="noopener noreferrer">ORCID</a>
+      <a href="https://scholar.google.com/citations?user=OgCHQv4AAAAJ" target="_blank" rel="noopener noreferrer">Google Scholar</a>
+      <a href="https://www.scopus.com/authid/detail.uri?authorId=57576533600" target="_blank" rel="noopener noreferrer">Scopus</a>
+      <a href="https://github.com/CaxtonEmerald-S" target="_blank" rel="noopener noreferrer">GitHub</a>
+      <a href="https://huggingface.co/CaxtonEmeraldS" target="_blank" rel="noopener noreferrer">Hugging Face</a>
+      <a href="https://www.linkedin.com/in/caxton-emerald-s/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+    </div>
+  </section>
+</main>
+<footer><div class="wrap">© 2026 Caxton Emerald S · Research profile · <a href="#home">Back to top</a></div></footer>
 </body>
 </html>
